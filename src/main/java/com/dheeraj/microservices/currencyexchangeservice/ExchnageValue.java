@@ -3,6 +3,7 @@ package com.dheeraj.microservices.currencyexchangeservice;
 import java.math.BigDecimal;
 
 public class ExchnageValue {
+    private int port;
     private Long id;
     private String from;
     private String to;
@@ -48,5 +49,13 @@ public class ExchnageValue {
 
     public void setConversionMultiple(BigDecimal conversionMultiple) {
         this.conversionMultiple = conversionMultiple;
+    }
+
+    public int getPort() {
+        return port;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
     }
 }
